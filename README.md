@@ -28,7 +28,7 @@ QCover supports *strict subsets of* two input file formats:
 * `.spec` format from [mist](https://github.com/pierreganty/mist) described [here](https://github.com/pierreganty/mist/wiki#input-format-of-mist),
 * `.tts` format from [Bfc](http://www.cprover.org/bfc/) described [here](http://www.cprover.org/bfc/#TTS).
 
-QCover loads `.spec` files as Petri nets and execute the backward coverability algorithm based on continuous reachability pruning described in [BFHH16, BFHH17] (see references below). Currently, QCover loads `.tts` files as vector addition systems with states (VASS) and execute a backward coverability algorithm with ℤ-VASS reachability pruning.  This feature is experimental and is not described in [BFHH16, BFHH17].
+QCover loads `.spec` files as Petri nets and execute the backward coverability algorithm based on continuous reachability pruning described in \[[BFHH16](#references), [BFHH17](#references)\] (see references below). Currently, QCover loads `.tts` files as vector addition systems with states (VASS) and execute a backward coverability algorithm with ℤ-VASS reachability pruning.  This feature is experimental and is not described in [BFHH16, BFHH17].
 
 Both input file formats can be translated to the other format using, e.g., [`ttstrans`](https://github.com/pevalme/bfc_fork) and [`spec2tts`](http://www.cprover.org/bfc/#DOWNLOAD).
 
