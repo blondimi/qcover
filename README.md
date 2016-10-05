@@ -15,7 +15,7 @@ QCover does not require any installation. However, [Python 2.7](https://www.pyth
 QCover can be executed by simply entering `python main.py file_to_verify`. For example, the Petri net given [here](https://www7.in.tum.de/~blondin/slides/TACAS16.pdf) for Lamport's mutual exclusion algorithm can be proven safe as follows:
 
 ```
-> python main.py ../examples/lamport_tacas.spec
+> python main.py ../examples/lamport/lamport_tacas.spec
 Safe
 ```
 
