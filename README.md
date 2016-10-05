@@ -6,9 +6,9 @@ QCover is a tool developed in Python that implements a backward coverability alg
 
 QCover does not require any installation. However, [Python 2.7](https://www.python.org/download/releases/2.7/) must be installed with the following additional packages:
 
-* [NumPy](http://www.numpy.org/) ≥ 1.8.2: `sudo apt-get install python-numpy`,
-* [SciPy](https://www.scipy.org/) ≥ 0.13.3: `sudo apt-get install python-scipy`,
-* [Z3](https://github.com/Z3Prover/) ≥ 4.4.0: follow installation instructions for Python bindings.
+* [NumPy](http://www.numpy.org/) ≥1.8.2: `sudo apt-get install python-numpy`,
+* [SciPy](https://www.scipy.org/) ≥0.13.3: `sudo apt-get install python-scipy`,
+* [Z3](https://github.com/Z3Prover/) ≥4.4.0: follow installation instructions for Python bindings.
 
 ## Usage
 
