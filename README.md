@@ -34,7 +34,7 @@ Both input file formats can be translated to the other format using, e.g., [`tts
 
 ## TACAS'16 release
 
-The current version of QCover differs slightly from the version that was tested in \[[BFHH16](#references)\]. Its code has been improved for adaptability and extendability. Benchmarking can be done using the original TACAS'16 version found in `./tacas16/`.
+The current version of QCover differs slightly from the version that was tested in \[[BFHH16](#references)\]. Its code has been improved for adaptability and extendability. Benchmarking can be done using the original TACAS'16 version found in [`./tacas16/`](https://github.com/blondimi/qcover/tree/master/tacas16).
 
 ## References
 
