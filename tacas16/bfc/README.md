@@ -1,0 +1,1 @@
+To benchmark QCover against Bfc, download the Bfc binaries from http://www.cprover.org/bfc/#DOWNLOAD into this folder.
