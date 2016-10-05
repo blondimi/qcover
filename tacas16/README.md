@@ -1,4 +1,4 @@
-To benchmark QCover against all the nets, execute benchmarks.sh as follows:
+To benchmark QCover against all the instances, execute benchmarks.sh as follows:
 
 ```
   cd benchmarks
@@ -12,4 +12,4 @@ cd benchmarks
 ./benchmarks/benchmarks.sh bfc
 ```
 
-In order to benchmark Petrinizer and Bfc, read `README.md` from their respective folders. In order to benchmark `mist`, install it from https://github.com/pierreganty/mist/.
+In order to benchmark Petrinizer and Bfc, read `README.md` from their respective folders. In order to benchmark mist, install it from https://github.com/pierreganty/mist/.
