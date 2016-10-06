@@ -32,9 +32,13 @@ QCover loads `.spec` files as Petri nets and executes the backward coverability 
 
 Both input file formats can be translated to the other format using, e.g., [`ttstrans`](https://github.com/pevalme/bfc_fork) and [`spec2tts`](http://www.cprover.org/bfc/#DOWNLOAD).
 
-## TACAS'16 release
+## Benchmarking and TACAS'16 release
 
 The current version of QCover differs slightly from the version that was tested in \[[BFHH16](#references)\]. Its code has been improved for adaptability and extendability. Benchmarking can be done using the original TACAS'16 version found in [`./tacas16/`](https://github.com/blondimi/qcover/tree/master/tacas16).
+
+## Questions
+
+For any question concerning QCover, contact [Michael Blondin](https://www7.in.tum.de/~blondin/#contact) or [Christoph Haase](http://www.lsv.ens-cachan.fr/~haase/index.html#info).
 
 ## References
 
