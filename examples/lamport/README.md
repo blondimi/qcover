@@ -4,7 +4,7 @@ The Petri net illustrated below models Lamport's 1-bit mutual exclusion algorith
 
 `lamport_tacas.spec` represents this Petri net and asks whether the two critical sections can be reached at the same time, i.e. whether a marking with tokens in both red places can be reached.
 
-![Modelisation of Lamport's mutual exclusion algorithm](https://github.com/blondimi/qcover/blob/master/examples/lamport/lamport_tacas.png)
+![Modelisation of Lamport's mutual exclusion algorithm](https://github.com/blondimi/qcover/blob/master/examples/lamport/petri_net.png)
 
 ## References
 
