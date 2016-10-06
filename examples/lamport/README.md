@@ -1,4 +1,4 @@
-# Lamport's 1-bit mutual exclusion algorithm
+# Example: Lamport's 1-bit mutual exclusion algorithm
 
 The Petri net illustrated below models Lamport's 1-bit mutual exclusion algorithm \[Lam86, Fig. 1\]. Places on the left and right hand side correspond respectively to lines of the left and right procedures. Tokens indicate the current lines of code being executed. A token in the middle topmost place corresponds to `x` taking value `True`, while a token in the place underneath it corresponds to `x` taking value `False`. Similarly, the presence of a token in the two middle places below correspond to `y` taking respectively value `True` and `False`.
 
