@@ -1,6 +1,6 @@
 # QCover
 
-QCover is a tool developed in Python that implements a backward coverability algorithm with efficient pruning based on a logical characterization of continuous Petri nets reachability which enables the power of the SMT solver Z3. QCover can also be used to decide reachability and coverability in continuous Petri nets.
+QCover is a Python implementation of a decision procedure for the Petri net coverability problem that is based on applying reachability in continuous Petri nets as a pruning criterion inside a backward-coverability framework. The heart of the approach is a sophisticated encoding of reachability in continuous Petri nets into SMT which then enables QCover to use the SMT solver Z3 in order to decide such reachability problems. QCover can also be used to decide reachability and coverability in continuous Petri nets.
 
 ## Installation
 
