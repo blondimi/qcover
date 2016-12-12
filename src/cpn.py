@@ -85,14 +85,14 @@ def max_firingset(petrinet, marking, transitions, reverse=False):
         new = False
 
         for t in transitions - transitions_subset:
-            preset = petrinet.places_set({t}, reverse, pre=True)
+            preset = petrinet.places_preset({t}, reverse)
 
             if preset <= places_subset:
-                postset = petrinet.places_set({t}, reverse, post=True)
+                postset = petrinet.places_postset({t}, reverse)
                 transitions_subset = transitions_subset | {t}
                 places_subset = places_subset | postset
                 new = True
-
+                
         if not new:
             break
 
