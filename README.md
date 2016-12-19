@@ -23,18 +23,15 @@ QCover has an experimental parallel mode that can be activated by switching `par
 
 ## Input file format
 
-QCover supports *strict subsets of* two input file formats:
+QCover supports a *strict subset of* the `.spec` format from [mist](https://github.com/pierreganty/mist) described [here](https://github.com/pierreganty/mist/wiki#input-format-of-mist). QCover loads `.spec` files as Petri nets and executes the backward coverability algorithm based on continuous reachability pruning described in \[[BFHH16](#references), [BFHH17](#references)\] and \[[Blo16, Chap. 5](#references)\] (see references below).
 
-* `.spec` format from [mist](https://github.com/pierreganty/mist) described [here](https://github.com/pierreganty/mist/wiki#input-format-of-mist),
-* `.tts` format from [Bfc](http://www.cprover.org/bfc/) described [here](http://www.cprover.org/bfc/#TTS).
-
-QCover loads `.spec` files as Petri nets and executes the backward coverability algorithm based on continuous reachability pruning described in \[[BFHH16](#references), [BFHH17](#references)\] and \[[Blo16, Chap. 5](#references)\] (see references below). Currently, QCover loads `.tts` files as vector addition systems with states (VASS) and executes a backward coverability algorithm with ℤ-VASS reachability pruning.  This feature is experimental and is not described in \[[BFHH16](#references), [BFHH17](#references)\].
+The *new* version of QCover also supports the `.tts` format from [Bfc](http://www.cprover.org/bfc/) described [here](http://www.cprover.org/bfc/#TTS). Currently, QCover loads `.tts` files as vector addition systems with states (VASS) and executes a backward coverability algorithm with ℤ-VASS reachability pruning.  This feature is experimental and is not described in \[[BFHH16](#references), [BFHH17](#references)\].
 
 Both input file formats can be translated to the other format using, e.g., [`ttstrans`](https://github.com/pevalme/bfc_fork) and [`spec2tts`](http://www.cprover.org/bfc/#DOWNLOAD).
 
-## Benchmarking and TACAS'16 release
+## Versions
 
-The current version of QCover differs slightly from the version that was tested in \[[BFHH16](#references)\]. Its code has been improved for adaptability and extendability. Benchmarking can be done using the original TACAS'16 version found in [`./tacas16/`](https://github.com/blondimi/qcover/tree/master/tacas16).
+The version found under [`./stable/`](https://github.com/blondimi/qcover/tree/master/stable) is the original TACAS'16 version. This version contains the benchmarking infrastructure and should be used for comparison with other tools. A new version in development can be found under [`./dev/`](https://github.com/blondimi/qcover/tree/master/dev). Its code has been improved for adaptability and extendability.
 
 ## Questions
 
