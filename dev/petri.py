@@ -186,7 +186,7 @@ class Petri:
         if pre:
             if self._repr_mode == Petri.DENSE:
                 subnet = self._pre_matrix.take(list(transitions), axis=1)
-                places |= set(subnet.nonzero()[0].getA1())
+                places |= set(np.ravel(subnet.nonzero()[0]))
             elif self._repr_mode == Petri.SPARSE:
                 for t in transitions:
                     places |= set(self._pre_matrix.getcol(t).nonzero()[0])
@@ -194,7 +194,7 @@ class Petri:
         if post:
             if self._repr_mode == Petri.DENSE:
                 subnet = self._post_matrix.take(list(transitions), axis=1)
-                places |= set(subnet.nonzero()[0].getA1())
+                places |= set(np.ravel(subnet.nonzero()[0]))
             elif self._repr_mode == Petri.SPARSE:
                 for t in transitions:
                     places |= set(self._post_matrix.getcol(t).nonzero()[0])
@@ -215,8 +215,8 @@ class Petri:
 
         if pre:
             if self._repr_mode == Petri.DENSE:
-                subnet = self._post_matrix.take(list(places), axis=0)
-                transitions |= set(subnet.nonzero()[1].getA1())
+                subnet = self._post_matrix.take(list(places), axis=0)        
+                transitions |= set(np.ravel(subnet.nonzero()[1]))
             elif self._repr_mode == Petri.SPARSE:
                 for p in places:
                     transitions |= set(self._post_matrix.getrow(p).nonzero()[1])
@@ -224,7 +224,7 @@ class Petri:
         if post:
             if self._repr_mode == Petri.DENSE:
                 subnet = self._pre_matrix.take(list(places), axis=0)
-                transitions |= set(subnet.nonzero()[1].getA1())
+                transitions |= set(np.ravel(subnet.nonzero()[1]))
             elif self._repr_mode == Petri.SPARSE:
                 for p in places:
                     transitions |= set(self._pre_matrix.getrow(p).nonzero()[1])
