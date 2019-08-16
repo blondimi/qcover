@@ -301,7 +301,7 @@ def transitions_set(petrinet, places, reverse=False, pre=False, post=False):
     if pre:
         if config.representation_mode == config.DENSE:
             subnet      = post_matrix.take(list(places), axis=0)
-            transitions = transitions | set(subnet.nonzero()[1].getA1())
+            transitions |= set(np.ravel(subnet.nonzero()[1]))
         elif config.representation_mode == config.SPARSE:
             for p in places:
                 transitions |= set(post_matrix.getrow(p).nonzero()[1])
@@ -309,7 +309,7 @@ def transitions_set(petrinet, places, reverse=False, pre=False, post=False):
     if post:
         if config.representation_mode == config.DENSE:
             subnet      = pre_matrix.take(list(places), axis=0)
-            transitions = transitions | set(subnet.nonzero()[1].getA1())
+            transitions |= set(np.ravel(subnet.nonzero()[1]))
         elif config.representation_mode == config.SPARSE:
             for p in places:
                 transitions |= set(pre_matrix.getrow(p).nonzero()[1])
